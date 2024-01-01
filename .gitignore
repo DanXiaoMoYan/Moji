@@ -1,0 +1,9 @@
+# VitePress
+.vitepress/cache
+.vitepress/dist
+
+# Node.js
+node_modules
+
+# WebStorm
+.idea
