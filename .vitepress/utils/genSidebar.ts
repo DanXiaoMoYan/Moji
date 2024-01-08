@@ -28,6 +28,7 @@ function generateSidebarItems(directory: string, basePath: string): SidebarInfo 
     : null
 
   const filesAndDirs = fs.readdirSync(directory, { withFileTypes: true })
+  filesAndDirs.sort((a, b) => a.name.localeCompare(b.name))
   filesAndDirs.forEach(dirent => {
     const fullPath = path.join(directory, dirent.name)
     if (dirent.isDirectory()) {
@@ -35,16 +36,16 @@ function generateSidebarItems(directory: string, basePath: string): SidebarInfo 
       const directoryItems = generateSidebarItems(fullPath, basePath)
       if (directoryItems.sidebarItems.length > 0) {
         sidebarItems.push({
-          text: dirent.name,
+          text: dirent.name.replace(/^\d+\./, ''),
           ...(directoryItems.folderLink ? { link: directoryItems.folderLink } : {}),
           items: directoryItems.sidebarItems
         })
       }
     } else if (path.extname(dirent.name) === '.md' && dirent.name !== 'index.md') {
       // 如果是 Markdown 文件则添加到数组
+      const text = path.basename(dirent.name, '.md').replace(/^\d+\./, '')
       sidebarItems.push({
-        text: path.basename(dirent.name, '.md'),
-        link: generateLink(fullPath, basePath)
+        text, link: generateLink(fullPath, basePath)
       })
     }
   })
