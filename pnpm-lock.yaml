@@ -5,12 +5,21 @@ settings:
   excludeLinksFromLockfile: false
 
 devDependencies:
+  '@types/markdown-it':
+    specifier: ^13.0.7
+    version: 13.0.7
   '@types/node':
     specifier: ^20.10.7
     version: 20.10.7
+  '@types/plantuml-encoder':
+    specifier: ^1.4.2
+    version: 1.4.2
   medium-zoom:
     specifier: ^1.1.0
     version: 1.1.0
+  plantuml-encoder:
+    specifier: ^1.4.0
+    version: 1.4.0
   vitepress:
     specifier: 1.0.0-rc.35
     version: 1.0.0-rc.35(@algolia/client-search@4.22.0)(@types/node@20.10.7)(search-insights@2.13.0)
@@ -569,6 +578,12 @@ packages:
       undici-types: 5.26.5
     dev: true
 
+  /@types/plantuml-encoder@1.4.2:
+    resolution: {integrity: sha512-R60SYlcXyTXQebyVwcarGSJUucuwYY5wetBWAOnRt3k52flBXgt4R1KrxaZ4xpk5MpVo9titpVBBhgl/A9JWRQ==, tarball: https://registry.npmmirror.com/@types/plantuml-encoder/-/plantuml-encoder-1.4.2.tgz}
+    dependencies:
+      '@types/node': 20.10.7
+    dev: true
+
   /@types/web-bluetooth@0.0.20:
     resolution: {integrity: sha512-g9gZnnXVq7gM7v3tJCWV/qw7w+KeOlSHAhgF9RytFyifW6AF61hdT2ucrYhPq9hLs5JIryeupHV3qGk95dH9ow==, tarball: https://registry.npmmirror.com/@types/web-bluetooth/-/web-bluetooth-0.0.20.tgz}
     dev: true
@@ -840,6 +855,10 @@ packages:
 
   /picocolors@1.0.0:
     resolution: {integrity: sha512-1fygroTLlHu66zi26VoTDv8yRgm0Fccecssto+MhsZ0D/DGW2sm8E8AjW7NU5VVTRt5GxbeZ5qBuJr+HyLYkjQ==, tarball: https://registry.npmmirror.com/picocolors/-/picocolors-1.0.0.tgz}
+    dev: true
+
+  /plantuml-encoder@1.4.0:
+    resolution: {integrity: sha512-sxMwpDw/ySY1WB2CE3+IdMuEcWibJ72DDOsXLkSmEaSzwEUaYBT6DWgOfBiHGCux4q433X6+OEFWjlVqp7gL6g==, tarball: https://registry.npmmirror.com/plantuml-encoder/-/plantuml-encoder-1.4.0.tgz}
     dev: true
 
   /postcss@8.4.33:

@@ -1,5 +1,6 @@
 import { defineConfig } from 'vitepress'
 import { generateSidebar } from './utils/genSidebar'
+import { plantUMLPlugin } from './utils/plantUMLPlugin'
 
 export default defineConfig({
   // 站点配置
@@ -81,6 +82,9 @@ export default defineConfig({
     theme: {
       light: 'material-theme',
       dark: 'material-theme'
+    },
+    config: md => {
+      md.use(plantUMLPlugin)
     }
   },
 
