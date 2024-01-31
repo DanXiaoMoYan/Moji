@@ -9,6 +9,7 @@ export default defineConfig({
   head: [ [ 'link', { rel: 'icon', href: '/logo.svg' } ] ],
   lang: 'zh-cn',
   srcDir: 'src',
+  cleanUrls: true,
 
   // 主题配置
   themeConfig: {
