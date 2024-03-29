@@ -8,11 +8,11 @@
   },
   "devDependencies": {
     "@types/markdown-it": "^13.0.7",
-    "@types/node": "^20.11.13",
+    "@types/node": "^20.11.30",
     "@types/plantuml-encoder": "^1.4.2",
     "medium-zoom": "^1.1.0",
     "plantuml-encoder": "^1.4.0",
-    "vitepress": "1.0.0-rc.40",
-    "vue": "^3.4.15"
+    "vitepress": "^1.0.1",
+    "vue": "^3.4.21"
   }
 }
