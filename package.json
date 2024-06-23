@@ -7,12 +7,12 @@
     "docs:preview": "vitepress preview"
   },
   "devDependencies": {
-    "@types/markdown-it": "^13.0.7",
-    "@types/node": "^20.11.30",
+    "@types/markdown-it": "^13.0.8",
+    "@types/node": "^20.14.8",
     "@types/plantuml-encoder": "^1.4.2",
     "medium-zoom": "^1.1.0",
     "plantuml-encoder": "^1.4.0",
-    "vitepress": "^1.0.1",
-    "vue": "^3.4.21"
+    "vitepress": "^1.2.3",
+    "vue": "^3.4.30"
   }
 }
