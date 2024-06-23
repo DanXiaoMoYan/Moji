@@ -10,6 +10,7 @@ export default defineConfig({
   lang: 'zh-cn',
   srcDir: 'src',
   cleanUrls: true,
+  sitemap: { hostname: 'https://blog.dxmy.fun' },
 
   // 主题配置
   themeConfig: {
@@ -74,8 +75,11 @@ export default defineConfig({
       next: '下一篇'
     },
     darkModeSwitchLabel: '外观',
+    lightModeSwitchTitle: '切换到浅色模式',
+    darkModeSwitchTitle: '切换到深色模式',
     sidebarMenuLabel: '菜单',
-    returnToTopLabel: '返回顶部'
+    returnToTopLabel: '返回顶部',
+    externalLinkIcon: true
   },
 
   // Markdown 配置
@@ -84,6 +88,14 @@ export default defineConfig({
       light: 'material-theme',
       dark: 'material-theme'
     },
+    container: {
+      tipLabel: '提示',
+      warningLabel: '警告',
+      dangerLabel: '危险',
+      infoLabel: '信息',
+      detailsLabel: '详细信息'
+    },
+    codeCopyButtonTitle: '复制代码',
     config: md => {
       md.use(plantUMLPlugin)
     }
